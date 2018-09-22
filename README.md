@@ -1,4 +1,4 @@
 # ReactFundamentals
 Created a react project during my react certification course.
 
-I uploaded the source for the components I created.
+Uploaded the source code of the components I made during my lessons.
