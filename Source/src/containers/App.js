@@ -29,11 +29,7 @@ class App extends PureComponent {
     console.log( '[App.js] Inside componentDidMount()' );
   }
 
-  // shouldComponentUpdate ( nextProps, nextState ) {
-  //   console.log( '[UPDATE App.js] Inside shouldComponentUpdate', nextProps, nextState );
-  //   return nextState.persons !== this.state.persons ||
-  //     nextState.showPersons !== this.state.showPersons;
-  // }
+ 
 
   componentWillUpdate ( nextProps, nextState ) {
     console.log( '[UPDATE App.js] Inside componentWillUpdate', nextProps, nextState );
@@ -43,15 +39,7 @@ class App extends PureComponent {
     console.log( '[UPDATE App.js] Inside componentDidUpdate' );
   }
 
-  // state = {
-  //   persons: [
-  //     { id: 'asfa1', name: 'Max', age: 28 },
-  //     { id: 'vasdf1', name: 'Manu', age: 29 },
-  //     { id: 'asdf11', name: 'Stephanie', age: 26 }
-  //   ],
-  //   otherState: 'some other value',
-  //   showPersons: false
-  // }
+
 
   nameChangedHandler = ( event, id ) => {
     const personIndex = this.state.persons.findIndex( p => {
@@ -62,7 +50,6 @@ class App extends PureComponent {
       ...this.state.persons[personIndex]
     };
 
-    // const person = Object.assign({}, this.state.persons[personIndex]);
 
     person.name = event.target.value;
 
@@ -108,7 +95,7 @@ class App extends PureComponent {
 
       </div>
     );
-    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
+   
   }
 }
 
